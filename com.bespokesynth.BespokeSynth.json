@@ -76,8 +76,7 @@
                 {
                     "type": "patch",
                     "paths": [
-                        "patches/bespoke-build-fixes.patch",
-                        "patches/bespoke-assert.patch"
+                        "patches/bespoke-build-fixes.patch"
                     ]
                 },
                 {
