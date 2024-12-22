@@ -66,8 +66,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/BespokeSynth/BespokeSynth.git",
-                    "tag": "v1.2.1",
-                    "commit": "9a2072ed509e23bc5ead29fe59a3897aa137d2ec",
+                    "tag": "v1.3.0",
+                    "commit": "1d0f0429d9b56f1b120b0b95f0a173cc02787e53",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
