@@ -1,7 +1,7 @@
 {
     "id": "com.bespokesynth.BespokeSynth",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "24.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "BespokeSynth.desktop",
     "rename-icon": "bespoke_icon",
@@ -17,7 +17,7 @@
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "24.08",
+            "version": "25.08",
             "add-ld-path": "lib",
             "merge-dirs": "vst3;lv2",
             "subdirectories": true,
@@ -25,7 +25,6 @@
         }
     },
     "modules": [
-        "shared-modules/libusb/libusb.json",
         {
             "name": "youtube-dl",
             "no-autogen": true,
@@ -54,6 +53,7 @@
             "name": "bespoke",
             "buildsystem": "cmake-ninja",
             "config-opts": [
+                "-DCMAKE_POLICY_VERSION_MINIMUM=3.5",
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
             ],
             "post-install": [
