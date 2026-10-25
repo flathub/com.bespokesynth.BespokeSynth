@@ -1,23 +1,23 @@
 {
     "id": "com.bespokesynth.BespokeSynth",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "25.08",
+    "runtime-version": "26.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-desktop-file": "BespokeSynth.desktop",
     "rename-icon": "bespoke_icon",
     "command": "BespokeSynth",
     "finish-args": [
         "--share=ipc",
-        "--device=all",
+        "--device=dri",
         "--socket=x11",
         "--socket=pulseaudio",
-        "--filesystem=xdg-run/pipewire-0",
+        "--filesystem=xdg-run/pipewire-0:ro",
         "--filesystem=home"
     ],
     "add-extensions": {
         "org.freedesktop.LinuxAudio.Plugins": {
             "directory": "extensions/Plugins",
-            "version": "25.08",
+            "version": "26.08",
             "add-ld-path": "lib",
             "merge-dirs": "vst3;lv2",
             "subdirectories": true,
